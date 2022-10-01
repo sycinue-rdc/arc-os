@@ -147,10 +147,11 @@ __________________________________________________________________________
 "
 echo "Getting ready for formatting drives."
 sleep 3s
-lsblk
+clear
 
 # - Root Partition - #
 
+lsblk
 echo "Enter the root partition (eg: /dev/sda#): "
 read rootpartition
 mkfs."$filesystemtype" "$rootpartition"
